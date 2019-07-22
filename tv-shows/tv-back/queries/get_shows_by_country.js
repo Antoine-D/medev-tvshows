@@ -1,10 +1,10 @@
 const get_show_by_country = (app, client) => {
     return app.get('/country/:country', (req, res) => {
 
-        console.log( req.params.country )
+        console.log( req.params.country );
 
         const query = {
-            index: 'shows',
+            index: 'popular',
             type: '_doc',
             body: {
                 "query": {
@@ -14,6 +14,7 @@ const get_show_by_country = (app, client) => {
                 }
             }
         };
+
 
         client
             .search(query)

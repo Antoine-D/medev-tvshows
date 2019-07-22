@@ -10,4 +10,5 @@ const getTvShows = async (page = 1) => {
 
 module.exports = {
     getTvShows,
+    
 };
