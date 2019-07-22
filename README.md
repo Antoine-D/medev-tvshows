@@ -24,4 +24,5 @@ Then you should be having access to the project : http://localhost:3010
 ```
 cd medev-shows/tv-back
 node get-all-shows.js
+node get-most-populars.js
 ```
